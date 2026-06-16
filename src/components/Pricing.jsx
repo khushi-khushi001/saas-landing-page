@@ -39,7 +39,7 @@ function Pricing() {
         
     ]
     return ( 
-        <section className="py-32 px-6 ">
+        <section className="py-30 px-6 ">
 
             <div className="max-w-7xl mx-auto">
 
