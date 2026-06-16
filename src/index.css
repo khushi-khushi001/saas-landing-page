@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  background: #030712;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+::selection {
+  background: #6366f1;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  transition: all .35s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 50px rgba(99,102,241,.25);
+}
